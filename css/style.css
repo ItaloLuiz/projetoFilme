@@ -1,0 +1,66 @@
+#pesquisa {
+  width: auto;
+  height: auto;
+  min-height: 50vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(37, 51, 65, 0.938), rgba(52, 73, 94, 0.24)),
+    url("../img/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+#pesquisa h1 {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.centralizar-div {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.m-t-40 {
+  margin-top: 40px;
+}
+
+#formulario {
+  border: solid 4px rgba(44, 62, 80, 1.0);
+  padding: 15px 15px 1px 15px;
+  border-radius: 4px;
+  background-color: rgba(127, 140, 141, 0.404);
+}
+
+#filmes-home {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.descricao_filme {
+  position: relative;
+  margin-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.borda-1 {
+  border: solid 1px #ddd;
+  border-radius: 2px;
+  box-shadow: 0 0 5px #ccc;
+  background-color: #fff;
+}
+
+.linha-superior {
+  border-top: solid 1px #f3f3f3;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.card-img-overlay {
+  padding-top: 20%;
+  background-color: rgba(34, 36, 37, 0.87);
+
+}

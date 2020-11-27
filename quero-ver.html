@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Movie Database</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow ">
+            <div class="container">
+              <a class="navbar-brand" href="index.html">Qual Filme</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home
+                          <span class="sr-only">(current)</span>
+                        </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="ja-assisti.html">Já assisti</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="quero-ver.html">Quero Ver</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="time.html">Sobre nós</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+         
+
+          <section id="pesquisa">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-6 centralizar-div">
+                          <h1 class="text-center">Buscar Filme</h1>
+
+                          <form name="formulario" id="formulario" method="get" action="busca.html" class="m-t-40">
+                            <div class="input-group mb-3">
+                                <input type="text" name="p" id="p"  class="form-control" placeholder="Nome do Filme" required="">
+                                <div class="input-group-append">
+                                  <button type="submit" class="btn btn-primary" id="go" type="button">Buscar</button>
+                                </div>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+          <section id="filmes-home" class="m-t-40">
+              <div class="container">
+                  <div class="row">               
+
+
+                   <div class="col-md-6 centralizar-div">
+                    <div  class="card bg-dark text-white">
+                        <figure class="banner_filme"></figure>
+                        <div class="card-img-overlay">
+                            <h2  class="titulo_filme card-title"></h2>
+                            <div class="descricao_filme"></div>
+                            <div class="grupo linha-superior">
+                                <p><strong>Atores:</strong> <span class="atores"></span></p>
+                            </div>
+                            <div class="grupo linha-superior">
+                                <p><strong>Estrelas:</strong> <span class="estrelas_filme"></span></p>
+                            </div>
+                            <div class="grupo linha-superior">
+                                <p><strong>Genero:</strong> <span class="genero"></span></p>
+                            </div>
+                            <div class="grupo linha-superior">
+                                <p><strong>Ano:</strong> <span class="ano_filme"></span></p>
+                            </div>
+
+                            <div class="grupo">
+                              <div class="row">
+
+                                  <div class="col-4">
+                                      <button id="quero-ver" class="btn btn-primary btn-block">Quero Assistir</button>
+                                  </div>
+
+                                  <div class="col-3">
+                                    <button id="ja-vi" class="btn btn-primary btn-block">Já Assisti</button>
+                                </div>
+
+                                <div class="col-3">
+                                    <div class="link_banner"></div>
+                                </div>
+
+
+                                
+
+
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                   </div>
+
+               
+               
+
+                  </div>
+              </div>
+          </section>
+
+          <footer class="m-t-40">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>Alguns direitos reservados</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+  
+
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/init.js"></script>
+        <script src="js/filme-home.js"></script>
+    </body>
+</html>
