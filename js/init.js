@@ -1,6 +1,6 @@
 function getFilm(nome) {
   const url =
-    "http://www.omdbapi.com/?t=" + nome + "&plot=full&apikey=c1a091fe";
+    "https://www.omdbapi.com/?t=" + nome + "&plot=full&apikey=c1a091fe";
   fetch(url, {
     method: "GET",
   })
